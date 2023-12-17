@@ -551,21 +551,28 @@ svg {
 }
 
 /*  5hw  */
-.order-form input {
-    font-size: 12px;
-    line-height: 24px;
-    font-family: "roboto", sans-serif;
-    font-weight: 400;
-    color: #ffffff;
-    letter-spacing: 0.48em;
-    background-color: #2E2F42;
-    border: 1px solid #ffffff;
-    padding-top: 8px ;
-    padding-bottom: 8px;
-    padding-left: 16px;
+.order-form {
+    display: flex; 
+    gap: 24px;
+}
+
+order-form-input {
     width: 264px;
     height: 40px;
-    margin-right: 24px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+    /*font-family: "roboto", sans-serif;
+    font-weight: 400;*/
+    /*background-color: #2E2F42;*/
+    /*padding-top: 8px ;
+    padding-bottom: 8px;*/
 }
 
 /*.footer-div-form-group-p {
@@ -573,18 +580,20 @@ see 511
 }*/
 
 .order-form-button {
-    width: 165px;
-    min-height: 40px;
-    padding: 8px 24px;
-    /*align-content: center;*/
-    border: 1px solid #4D5AE5;
-    border-radius: 4px;
-    background-color: #4D5AE5;
-    color: #ffffff;
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center; /*для вирівнювання контенту по горизонталі*/
+    align-items: center; /*для вирівнювання контенту по вертикалі*/
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
-    line-height: 24px;
-    font-family: "roboto", sans-serif;
     font-weight: 500;
-    /*text-align: center;*/
-    letter-spacing: 0.64px;
+    line-height: 1.5;
+    letter-spacing: 0.04pm;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none; 
+    border-radius: 4px;
+    /*padding: 8px 24px;*/
 }
