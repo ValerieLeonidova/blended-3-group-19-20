@@ -560,56 +560,92 @@
                 </use>
             </svg>
         </button>
+
         <p class="modal-p">
             Leave your contacts and we will call you back
         </p>
+
         <form>
             <div class="modal-form-div">
+                <label class="modal-form-div-l" for="user-name">
+                    Name </label>
+                <div class="modal-form-div-pers">
+                    <input class="input-pers" type="text" name="contact_tel" id="user-name" />
+                    <!-- При натисканні на мітку пов'язаний елемент 
+                    автоматично отримає ефект фокусування.
+                    Якщо елемент форми вкладається в label, 
+                    зв'язок створюється браузером автоматично. 
+                    Клік за текстом «Username» поставить фокус у поле введення.
+                    Якщо елемент форми не вкладено в label, 
+                    необхідно явно зв'язати їх через:
+                    атрибут id елемента та
+                    атрибут for мітки
+                    -->
+                    <svg class="modal-form-div-svg" width="18" height="18">
+                        <use href="./images/icons.svg#icon-pers"> 
+                        </use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-form-div">
+                <label class="modal-form-div-l" >
+                    Phone </label>
+                <div class="modal-form-div-phone">
+                    <input class="input-pers" type="tel" name="contact_tel" />
+                    <svg class="modal-form-div-svg" width="18" height="24">
+                        <use href="./images/icons.svg#icon-phone"> 
+                        </use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-form-div">
                 <label class="modal-form-div-l">
-                    Name
-                    <div class="modal-form-div-pers">
-                        <input class="input-pers" type="text" name="contact_pers" />
-                        <svg class="modal-button-close-svg" width="18" height="8">
-                            <use href="./images/icons.svg#icon-close"> 
+                    Email</label>
+                <div class="modal-form-div-email">
+                    <input class="input-email" type="email" name="contact_email"/>
+                    <svg class="modal-form-div-svg" width="18" height="24">
+                        <use href="./images/icons.svg#icon-email"> 
+                        </use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-form-div-comment">    
+                <label class="modal-form-div-l" for="user-comment">
+                    Comment</label>
+                <textarea 
+                class="modal-form-comment-textarea" 
+                id="user-comment" 
+                placeholder="Text input">
+                </textarea>                
+            </div>
+
+            <div class="modal-form-checkbox">
+                <input class="input-checkbox visually-hidden" 
+                        type="checkbox" 
+                        name="user-privacy"
+                        id="user-privacy" value="true" />
+                <label class="label-checkbox" for="user-privacy">
+                    I accept the terms and conditions of the
+                    <span class="label-checkbox-span">
+                        <svg class="svg-checkbox" width="10" height="8">
+                            <use href="./images/icons.svg#icon-galochka"> 
                             </use>
                         </svg>
-                    </div>
-                </label>
-            </div>
-            <div modal-form-div>
-                <label class="modal-form-div-l">
-                    Phone
-                    <div class="modal-form-div-tel">
-                        <input class="input-tel" type="tel" name="contact_tel" />
-                        <svg class="modal-button-close-svg" width="18" height="24">
-                            <use href="./images/icons.svg#icon-phone"> 
-                            </use>
-                        </svg>
-                    </div>
-                </label>
-            </div>
-            <div modal-form-div>
-                <label class="modal-form-div-l">
-                    Email
-                    <div class="modal-form-div-email">
-                        <input class="input-email" type="email" name="contact_email" />
-                        <svg class="modal-button-close-svg" width="18" height="24">
-                            <use href="./images/icons.svg#icon-email"> 
-                            </use>
-                        </svg>
-                    </div>
-                </label>
-            </div>
-            <div modal-form-div>    
-                <label class="modal-form-div-l">
-                    Comment
-                    <div class="modal-form-div-comment"></div>
-                        <input class="input-comment" type="text" name="contact_comment" />
-                    </div>
+                    </span>
+                    <a href="" class="label-checkbox-a">
+                        Privacy Policy
+                    </a>
                 </label>
             </div>
     
-        </form>
+            <button class="modal-form-button">
+
+            </button>
+
+        </form> 
     </div>
 
 
