@@ -697,9 +697,9 @@ see 511                    }*/
     margin-bottom: 4px; 
 }
 
-.modal-form-div-pers,
-.modal-form-div-phone,
-.modal-form-div-email {
+/*.modal-form-div-phone,
+.modal-form-div-email*/
+.modal-form-div-pers {
     position: relative;
 }
 
@@ -780,7 +780,13 @@ see 511                    }*/
     fill: transparent; 
 }
 
-.input-checkbox:checked .label-checkbox-span{
+/*.input-checkbox:checked .label-checkbox-span{
+    background-color: #404bbf; 
+    border: none; 
+    fill: #F4F4FD; 
+}*/
+
+.input:checked .label-checkbox-span{
     background-color: #404bbf; 
     border: none; 
     fill: #F4F4FD; 
