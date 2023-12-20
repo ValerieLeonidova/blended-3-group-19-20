@@ -786,11 +786,7 @@ see 511                    }*/
     fill: #F4F4FD; 
 }*/
 
-
-/* 20-12-2023 поміняла 
-.input-checkbox*/
-/*.label-checkbox-span input:checked {*/
-.label-checkbox-span .input-checkbox:checked {
+.input:checked .label-checkbox-span {
     background-color: #404bbf; 
     border: none; 
     fill: #F4F4FD; 
