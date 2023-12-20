@@ -786,9 +786,13 @@ see 511                    }*/
     fill: transparent; 
 }
 
-.input-checkbox:checked .label-checkbox-span{
+.input-checkbox.visually-hidden:checked .label-checkbox-span {
     background-color: #404bbf; 
+}
+.input-checkbox:checked .label-checkbox-span {
     border: none; 
+}        
+.input-checkbox:checked .label-checkbox-span {
     fill: #F4F4FD; 
 }
 
