@@ -786,15 +786,18 @@ see 511                    }*/
     fill: transparent; 
 }
 
-.input-checkbox.visually-hidden:checked .label-checkbox-span {
+
+/*input:checked + label > span {}*/
+.input-checkbox:checked + .label-checkbox > .label-checkbox-span {
     background-color: #404bbf; 
-}
-.input-checkbox:checked .label-checkbox-span {
     border: none; 
-}        
-.input-checkbox:checked .label-checkbox-span {
     fill: #F4F4FD; 
 }
+/*.input-checkbox:checked .label-checkbox-span {
+    background-color: #404bbf; 
+    border: none; 
+    fill: #F4F4FD; 
+}*/
 
 /*.input:checked .label-checkbox-span {
     background-color: #404bbf; 
