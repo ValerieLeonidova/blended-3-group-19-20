@@ -780,11 +780,11 @@ see 511                    }*/
     fill: transparent; 
 }
 
-/*.input-checkbox:checked .label-checkbox-span{
+.input-checkbox:checked .label-checkbox-span{
     background-color: #404bbf; 
     border: none; 
     fill: #F4F4FD; 
-}*/
+}
 
 /*.input:checked .label-checkbox-span {
     background-color: #404bbf; 
@@ -792,11 +792,11 @@ see 511                    }*/
     fill: #F4F4FD; 
 }*/
 
-.label-checkbox-span .input-checkbox:checked{
+/*.label-checkbox-span .input-checkbox:checked{
     background-color: #404bbf; 
     border: none; 
     fill: #F4F4FD; 
-}
+}*/
 
 .label-checkbox-a {
     color: #4d5ae5; 
