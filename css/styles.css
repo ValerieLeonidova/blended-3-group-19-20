@@ -660,12 +660,10 @@ see 511                    }*/
 .modal-button-close:hover {
     background-color: #404bbf; 
     border: none; 
-    /*fill: #ffffff;*/
 } 
 
 .modal-button-close:focus {
     border: none; 
-    /*fill: #ffffff;*/
 }
 
 .modal-button-close-svg {
@@ -673,6 +671,10 @@ see 511                    }*/
 }
 
 .modal-button-close:hover .modal-button-close-svg {
+    fill: #ffffff;
+}
+
+.modal-button-close:focus .modal-button-close-svg {
     fill: #ffffff;
 }
 
