@@ -245,10 +245,10 @@ h2 {
     color: #2e2f42;
 }
 
-svg {
+/*svg {
     fill: #4D5AE5;
 
-}
+}*/
 
 .svg-visio {
     width: 64;
@@ -598,6 +598,10 @@ see 511                    }*/
     fill: white;
 }
 
+.container-footer-form-group {
+    margin-left: auto;
+}
+
 /* вікно на всю ширину основного банера*/
 /*div - контейнер для модального вікна*/
 .modal {
@@ -668,6 +672,7 @@ see 511                    }*/
 
 .modal-button-close-svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    fill: #2e2f42;
 }
 
 .modal-button-close:hover .modal-button-close-svg {
@@ -686,6 +691,7 @@ see 511                    }*/
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 16px;
+    margin-top: 0;
 }
 
 .modal-form-div {
@@ -730,6 +736,11 @@ see 511                    }*/
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #2e2f42;  
+}
+
+.input-pers:hover .modal-form-div-svg {
+    fill: #4D5AE5;
 }
 
 .input-pers:focus .modal-form-div-svg {
@@ -784,32 +795,20 @@ see 511                    }*/
     align-items: center; 
     justify-content: center;
     fill: transparent; 
+    margin-right: 8px; /*21-12-2023 ментор - відступ від чекбоксу до слів*/
 }
 
 
-/*input:checked + label > span {}*/
+/*input:checked + label > span {} 20-12-2023 slack @sergiy korobka*/
 .input-checkbox:checked + .label-checkbox > .label-checkbox-span {
     background-color: #404bbf; 
     border: none; 
     fill: #F4F4FD; 
 }
-/*.input-checkbox:checked .label-checkbox-span {
-    background-color: #404bbf; 
-    border: none; 
-    fill: #F4F4FD; 
-}*/
 
-/*.input:checked .label-checkbox-span {
-    background-color: #404bbf; 
-    border: none; 
-    fill: #F4F4FD; 
-}*/
-
-/*.label-checkbox-span .input-checkbox:checked{
-    background-color: #404bbf; 
-    border: none; 
-    fill: #F4F4FD; 
-}*/
+.input-checkbox:focus + .label-checkbox > .label-checkbox-span {
+    border-color: #4D5AE5;
+}
 
 .label-checkbox-a {
     color: #4d5ae5; 
@@ -830,4 +829,5 @@ see 511                    }*/
     border: none; 
     border-radius: 4px; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}/*
+    margin: 0 auto;   /*21-12-2021 - центрувати кнопку    */
+}
