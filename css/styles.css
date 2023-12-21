@@ -727,7 +727,7 @@ see 511                    }*/
 .input-pers:focus {
     border-color: #4D5AE5;
 }
-
+/* 21-12-2023   колір іконок *************/
 .modal-form-div-svg {
     position: absolute;
     left: 16px;
@@ -737,13 +737,15 @@ see 511                    }*/
     fill: #2e2f42;  
 }
 
-.modal-form-div:focus .modal-form-div-svg {
+.input-pers:focus .modal-form-div-svg {
     fill: #4D5AE5;
 }
 
-.modal-form-div:hover .modal-form-div-svg {
+.input-pers:hover .modal-form-div-svg {
     fill: #4D5AE5;
 }
+/**********************************/
+
 
 .modal-form-div-comment {
     margin-bottom: 16px;
