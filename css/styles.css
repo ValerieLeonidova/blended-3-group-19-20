@@ -709,8 +709,6 @@ see 511                    }*/
     margin-bottom: 4px; 
 }
 
-/*.modal-form-div-phone,
-.modal-form-div-email*/
 .modal-form-div-pers {
     position: relative;
 }
@@ -739,11 +737,11 @@ see 511                    }*/
     fill: #2e2f42;  
 }
 
-.input-pers:hover .modal-form-div-svg {
+.modal-form-div:focus .modal-form-div-svg {
     fill: #4D5AE5;
 }
 
-.input-pers:focus .modal-form-div-svg {
+.modal-form-div:hover .modal-form-div-svg {
     fill: #4D5AE5;
 }
 
