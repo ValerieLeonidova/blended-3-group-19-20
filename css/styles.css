@@ -737,7 +737,7 @@ see 511                    }*/
     fill: #2e2f42;  
 }
 
-.input-pers:focus .modal-form-div-svg {
+.input-pers:focus + .modal-form-div-svg {
     fill: #4D5AE5;
 }
 
