@@ -49,8 +49,35 @@
                 </li>
             </ul>
         </address>
+        <button class="open-menu">
+            <svg class="svg-team" width="24" height="24">
+                <use href="./images/icons.svg#icon-burger-group-168-144"></use>
+            </svg>
+        </button>
     </div>
 </header>
+
+<div class="mobile-menu">
+    
+    <button class="close-menu">
+        <svg class="svg-team" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+    </button>
+    <ul class="menu">
+        <li><a href="">lorem</a></li>
+        <li><a href="">lorem</a></li>
+        <li><a href="">lorem</a></li>
+    </ul>
+    <ul>
+        <li><a href="">email</a></li>
+        <li><a href="">tel</a></li>
+    </ul>
+    <ul>
+        <li><a href="">facebook</a></li>
+        <li><a href="">link</a></li>
+    </ul>
+</div>
 
 <main>
     <section class="about">
@@ -551,7 +578,7 @@
     
 </footer>
 
-<div class="modal is-open">  <!-- div - контейнер для модального вікна
+<div class="modal">  <!-- div - контейнер для модального вікна
     21-12-2023 ментор - Якщо додати на елемент бекдроп 
     клас is-open — з'являється бекдроп і модальне вікно.
     Модалку треба відображувати за допомогою класу is-open, 
@@ -632,10 +659,12 @@
                             </use>
                         </svg>
                     </span>
-                    I accept the terms and conditions of the
-                    <a href="" class="label-checkbox-a">
-                        Privacy Policy
-                    </a>
+                    <span>
+                        I accept the terms and conditions of the
+                        <a href="" class="label-checkbox-a">
+                            Privacy Policy
+                        </a>
+                    </span>
 
                 </label>
             </div>
